@@ -114,3 +114,48 @@ body, html {
     margin: 0; /* Remove margin to allow full-width */
     position: relative; /* Ensure the container is positioned correctly */
 }
+/* Ensure the container takes full width and has enough padding */
+.special-message {
+    text-align: center;
+    padding: 20px; /* Reduced padding for smaller screens */
+    margin: 0 auto; /* Center the content on all screens */
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    max-width: 500px; /* Set a max-width to prevent overflow on small screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust font size of the heading on smaller screens */
+@media (max-width: 768px) {
+    .special-message h2 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+        margin-top: 10px; /* Add some margin at the top */
+    }
+
+    .shayari {
+        font-size: 1rem; /* Adjust shayari font size */
+        padding-left: 10px; /* Reduce padding on mobile */
+    }
+
+    .back-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .special-message h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .shayari {
+        font-size: 0.9rem;
+        padding-left: 8px;
+    }
+
+    .back-button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
